@@ -3,37 +3,25 @@
     width: 0.25
     height: 0.20
   position:
-    x: -0.4745001495506527
-    y: 0.5701361764812172
-    z: 0.4770531343560852
+    x: -0.494061
+    y: 0.692729
+    z: 0.400215
   fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
-    x: 0.05
-    y: -0.05
+    x: 0.02
+    y: 0.05
     z: 0.09
 
 # charlie_camera
 - size: *realsense_size
   position:
-    x: -1.0187468479259163
-    y: -0.0030176253641306
-    z: 0.46540390077506166
+    x: -1.201099
+    y: 0.000400
+    z: 0.403127
   fixture_orientation: "-x"
   offset: # From fixture tip to camera optical frame offset
     x: -0.02
     y: 0.02
-    z: 0.09
-
-# alpha_camera
-- size: *realsense_size # Dimensions with 1.25 cm margin all around
-  position:
-    x: -0.7088298610537004
-    y: 0.541724684835309
-    z: 0.5616100676306571
-  fixture_orientation: "+y"
-  offset: # From fixture tip to camera optical frame offset
-    x: -0.05
-    y: -0.05
     z: 0.09
 
 # "left_camera"

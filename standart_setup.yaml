@@ -3,12 +3,13 @@ left:
   arm_kinematics: "kinematics/ur5_left.yaml"
   arm_joint_limits: "limits/half_joint_limits.yaml"
   arm_pose:
-    x: -0.1788041506801779
-    y: 0.0012851179536986224
-    z: 0.790690601391236
-    roll: -3.1326812307651792
-    pitch: -0.7807533720416843
-    yaw: 3.128084943639606
+    x: -0.17469280010643373
+    y: -0.0042453758457910995
+    z: 0.7900226386441459
+    roll: 3.1392474585649786
+    pitch: -0.7832185966785736
+    yaw: 3.1383051269108933
+
   gripper: "onrobot-rg2"
   gripper_pose:
     x: 0.0
@@ -19,12 +20,13 @@ left:
     yaw: 0.0
   camera: "realsense-d435i"
   camera_pose:
-    x: 0.0
-    y: 0.01
-    z: 0.13
-    roll: -1.57
-    pitch: -1.57
-    yaw: 0.0
+    x: 0.0014664225137346124
+    y: 0.014491056527151769
+    z: 0.13148527149329517
+    roll: 2.8041477875085317
+    pitch: -1.5592828100772942
+    yaw: 1.9010370316589085
+
 
 # right arm configuration
 right:
