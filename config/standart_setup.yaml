@@ -10,7 +10,7 @@ left:
     pitch: -0.7832185966785736
     yaw: 3.1383051269108933
 
-  gripper: "onrobot-rg2"
+  gripper: "onrobot-rg6"
   gripper_pose:
     x: 0.0
     y: 0.0
@@ -39,7 +39,7 @@ right:
     roll: 0.0
     pitch: 2.356194490192345
     yaw: 0.0
-  gripper: "onrobot-rg6"
+  gripper: "onrobot-rg2"
   gripper_pose:
     x: 0.0
     y: 0.0

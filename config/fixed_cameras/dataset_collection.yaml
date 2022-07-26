@@ -24,14 +24,26 @@
     y: 0.02
     z: 0.09
 
-# "left_camera"
-- size: *realsense_size # Dimensions with 1.25 cm margin all around
+# Spare camera
+- size: *realsense_size
   position:
-    x: 0.9659536185112643
-    y: -0.3803047341856819
-    z: 0.3660681660928672
+    x: 0.659426
+    y: 0.561549
+    z: 0.308404
+  fixture_orientation: "+y"
+  offset: # From fixture tip to camera optical frame offset
+    x: -0.03
+    y: 0.00
+    z: 0.09
+
+# "left" camera
+- size: *realsense_size
+  position:
+    x: 1.11
+    y: -0.045
+    z: 0.2675
   fixture_orientation: "+x"
   offset: # From fixture tip to camera optical frame offset
-    x: -0.05
-    y: -0.05
-    z: 0.09
+    x: -0.10
+    y: 0.00
+    z: 0.01
