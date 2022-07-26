@@ -11,6 +11,7 @@ left:
     yaw: 3.1383051269108933
 
   gripper: "onrobot-rg6"
+  gripper_controller: "onrobot_rg"
   gripper_pose:
     x: 0.0
     y: 0.0
@@ -39,7 +40,8 @@ right:
     roll: 0.0
     pitch: 2.356194490192345
     yaw: 0.0
-  gripper: "onrobot-rg2"
+  gripper: "custom:cylinder_tool"
+  gripper_controller: "fake"
   gripper_pose:
     x: 0.0
     y: 0.0
@@ -47,14 +49,14 @@ right:
     roll: 0.0
     pitch: 0.0
     yaw: 0.0
-  camera: "realsense-d435i"
-  camera_pose:
-    x: 0.0
-    y: 0.02
-    z: 0.15
-    roll: -1.57
-    pitch: -1.57
-    yaw: 0.0
+  # camera: "realsense-d435i"
+  # camera_pose:
+  #   x: 0.0
+  #   y: 0.02
+  #   z: 0.15
+  #   roll: -1.57
+  #   pitch: -1.57
+  #   yaw: 0.0
 
 # Fixed cameras
 fixed_cameras_file: "fixed_cameras/dataset_collection.yaml"
