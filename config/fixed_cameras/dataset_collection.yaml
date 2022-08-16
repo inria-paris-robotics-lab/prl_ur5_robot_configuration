@@ -1,49 +1,65 @@
-# bravo_camera
-- size: &realsense_size
+- type: 'realsense-d435i'
+  name_prefix: bravo
+  bounding_box: &realsense_size
     width: 0.25
     height: 0.20
-  position:
-    x: -0.494061
-    y: 0.692729
-    z: 0.400215
+  pose:
+    x: -0.492452
+    y: 0.689076
+    z: 0.379511
+    roll:  -2.099
+    pitch: 0.002
+    yaw:   -3.117
   fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
-    x: 0.02
-    y: 0.05
-    z: 0.09
+    x: 0.03
+    y: 0.01
+    z: 0.08
 
-# charlie_camera
-- size: *realsense_size
-  position:
-    x: -1.201099
-    y: 0.000400
-    z: 0.403127
+- type: 'realsense-d435i'
+  name_prefix: charlie
+  bounding_box: *realsense_size
+  pose:
+    x: -1.200689
+    y: 0.001414
+    z: 0.393254
+    roll:  -2.094
+    pitch: -0.003
+    yaw:   -1.568
   fixture_orientation: "-x"
   offset: # From fixture tip to camera optical frame offset
-    x: -0.02
-    y: 0.02
-    z: 0.09
+    x: -0.01
+    y: 0.03
+    z: 0.08
 
-# Spare camera
-- size: *realsense_size
-  position:
-    x: 0.659426
-    y: 0.561549
-    z: 0.308404
+- type: 'realsense-d435i'
+  name_prefix: delta
+  bounding_box: *realsense_size
+  pose:
+    x: 0.611561
+    y: 0.518683
+    z: 0.276871
+    roll:  -1.907
+    pitch: 0.019
+    yaw:   3.139
   fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
-    x: -0.03
-    y: 0.00
-    z: 0.09
+    x: 0.03
+    y: 0.075
+    z: 0.075
 
-# "left" camera
-- size: *realsense_size
-  position:
-    x: 1.11
-    y: -0.045
-    z: 0.2675
+- type: 'realsense-d435i'
+  name_prefix: alpha
+  bounding_box: *realsense_size
+  pose:
+    x: 1.123226
+    y: -0.029688
+    z: 0.353876
+    roll:  -2.000
+    pitch: -0.042
+    yaw:   1.608
   fixture_orientation: "+x"
   offset: # From fixture tip to camera optical frame offset
-    x: -0.10
-    y: 0.00
-    z: 0.01
+    x: -0.08
+    y: 0.02
+    z: 0.08
