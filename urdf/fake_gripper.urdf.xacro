@@ -20,7 +20,7 @@
             <child link = "${name}_finger_tip"/>
             <axis xyz="0 1 0"/>
             <origin xyz="0 0 0" rpy="0 0 0"/>
-            <limit lower="0" upper="1.4" effort="1" velocity="1"/>
+            <limit lower="-.1" upper="1.4" effort="1" velocity="1"/>
             <!-- <dynamics damping="0.5"/> -->
             <xacro:unless value="${is_master}">
             <mimic joint="${prefix}_joint" multiplier="1" offset="0"/>
