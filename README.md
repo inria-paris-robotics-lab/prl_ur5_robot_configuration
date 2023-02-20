@@ -10,7 +10,7 @@ The calibration parameters contain the positions of the arms, grippers, sensors,
 
 ### Custom gripper URDF
 
-In the `*_setup.yaml` file, the type of gripper used for each arm is specified. Standard types are: 'onrobot-rg2', 'onrobot-rg6', ... (that are industrial gripper available at PRL). To attach custom tools at the end of one arm, custom URDFs need to be created to update the robot model. Those custom tools/URDF might not be long-lasting enough to integrate them in `prl_ur5_robot` repo. Thus, is what the [custom_gripper/](custom_gripper/) directory of this repo is made for.
+In the `*_setup.yaml` file, the type of gripper used for each arm is specified. Standard types are: 'onrobot-rg2', 'onrobot-rg6', 'onrobot-rg6-v2', ... (that are industrial gripper available at PRL). To attach custom tools at the end of one arm, custom URDFs need to be created to update the robot model. Those custom tools/URDF might not be long-lasting enough to integrate them in `prl_ur5_robot` repo. Thus, is what the [custom_gripper/](custom_gripper/) directory of this repo is made for.
 
 #### Usage
 For example, to create a custom tool/gripper named `my_gripper`, `prl_ur5_description` expects to see :
