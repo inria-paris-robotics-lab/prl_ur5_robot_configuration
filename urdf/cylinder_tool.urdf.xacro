@@ -13,7 +13,7 @@
       <link name="${prefix}_body">
         <visual>
           <geometry>
-            <mesh filename="package://prl_ur5_robot_configuration/urdf/models/cylinder_tool.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://prl_ur5_robot_configuration/urdf/models/cylinder_tool_visual.stl"/>
           </geometry>
           <material name="Grey">
             <color rgba="0.8 0.8 0.8 1.0"/>
@@ -21,7 +21,12 @@
         </visual>
         <collision>
           <geometry>
-            <mesh filename="package://prl_ur5_robot_configuration/urdf/models/cylinder_tool.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://prl_ur5_robot_configuration/urdf/models/cylinder_tool_collision_body.stl"/>
+          </geometry>
+        </collision>
+        <collision>
+          <geometry>
+            <mesh filename="package://prl_ur5_robot_configuration/urdf/models/cylinder_tool_collision_base.stl"/>
           </geometry>
         </collision>
         <inertial>
