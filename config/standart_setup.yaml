@@ -41,7 +41,7 @@ right:
     pitch: 2.356194490192345
     yaw: 0.0
   gripper: "custom:cylinder_tool"
-  gripper_controller: "fake"
+  gripper_controller: "None"
   gripper_pose:
     x: 0.0
     y: 0.0
