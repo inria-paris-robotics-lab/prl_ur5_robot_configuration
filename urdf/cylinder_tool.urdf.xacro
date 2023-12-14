@@ -52,10 +52,5 @@
         <child link = "${prefix}_grasp_frame"/>
         <origin xyz="0 0 0.154" rpy="0 0 0"/>
       </joint>
-
-      <!-- Create a 'fake' actuated gripper so Moveit don't throw error because it can't find the gripper links/joints/controller from Gazebo -->
-      <xacro:include filename="$(find prl_ur5_robot_configuration)/urdf/fake_gripper.urdf.xacro"/>
-      <xacro:fake_gripper_actuation prefix="${prefix}" palm="${prefix}_body"/>
-
   </xacro:macro>
 </robot>

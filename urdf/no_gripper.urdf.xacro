@@ -1,34 +1,30 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:macro name="no_gripper" params="parent *origin prefix transmission_hw_interface">
-      <link name="${prefix}_base">
-        <inertial>
-        <!-- Add a non-null mass otherwise Gazebo don't load link -->
-          <mass value="0.001" />
-          <inertia  ixx="0.0" ixy="0.0" ixz="0.0"
-                    iyy="0.0" iyz="0.0"
-                    izz="0.0" />
-        </inertial>
-    </link>
+  <link name="${prefix}_base">
+          <inertial>
+          <!-- Add a non-null mass otherwise Gazebo don't load link -->
+            <mass value="0.001" />
+            <inertia  ixx="0.0" ixy="0.0" ixz="0.0"
+                      iyy="0.0" iyz="0.0"
+                      izz="0.0" />
+          </inertial>
+      </link>
 
-      <joint name="${prefix}_base_joint" type="fixed">
-        <parent link="${parent}"/>
-        <child link = "${prefix}_base"/>
-        <xacro:insert_block name="origin"/>
-      </joint>
+        <joint name="${prefix}_base_joint" type="fixed">
+          <parent link="${parent}"/>
+          <child link = "${prefix}_base"/>
+          <xacro:insert_block name="origin"/>
+        </joint>
 
-      <!-- grasp frame -->
-      <link name="${prefix}_grasp_frame"/>
+        <!-- grasp frame -->
+        <link name="${prefix}_grasp_frame"/>
 
-      <joint name="${prefix}_grasp_frame_joint" type="fixed">
-        <parent link="${prefix}_base"/>
-        <child link = "${prefix}_grasp_frame"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-      </joint>
-
-      <!-- Create a 'fake' actuated gripper so Moveit don't throw error because it can't find the gripper links/joints/controller from Gazebo -->
-      <xacro:include filename="$(find prl_ur5_robot_configuration)/urdf/fake_gripper.urdf.xacro"/>
-      <xacro:fake_gripper_actuation prefix="${prefix}" palm="${prefix}_base"/>
+        <joint name="${prefix}_grasp_frame_joint" type="fixed">
+          <parent link="${prefix}_base"/>
+          <child link = "${prefix}_grasp_frame"/>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+        </joint>
 
   </xacro:macro>
 </robot>

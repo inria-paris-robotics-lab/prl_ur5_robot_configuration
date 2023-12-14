@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
-    <xacro:include filename="$(find prl_ur5_robot_configuration)/urdf/fake_gripper.srdf.xacro"/>
-
-    <xacro:macro name="cylinder_tool_group" params="prefix">
-        <xacro:fake_gripper_group prefix="${prefix}"/>
-        <link name="${prefix}_base"/>
-        <link name="${prefix}_body"/>
+    <xacro:macro name="cylinder_tool_group_define" params="group_name prefix">
+        <group name="${group_name}">
+            <link name="${prefix}_base"/>
+            <link name="${prefix}_body"/>
+        </group>
     </xacro:macro>
 
     <xacro:macro name="cylinder_tool_autocol" params="prefix">
-        <xacro:fake_gripper_autocol prefix="${prefix}"/>
     </xacro:macro>
 
     <xacro:macro name="cylinder_tool_col_with" params="prefix link">
-        <xacro:fake_gripper_col_with prefix="${prefix}" link="${link}"/>
         <disable_collisions link1="${prefix}_body" link2="${link}" reason="Never"/>
     </xacro:macro>
 </robot>

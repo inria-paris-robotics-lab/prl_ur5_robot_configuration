@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
-    <xacro:include filename="$(find prl_ur5_robot_configuration)/urdf/fake_gripper.srdf.xacro"/>
-
-    <xacro:macro name="no_gripper_group" params="prefix">
-        <xacro:fake_gripper_group prefix="${prefix}"/>
-        <link name="${prefix}_base"/>
+    <xacro:macro name="no_gripper_group_define" params="group_name prefix">
+        <group name="${group_name}">
+            <link name="${prefix}_base"/>
+        </group>
     </xacro:macro>
 
     <xacro:macro name="no_gripper_autocol" params="prefix">
-        <xacro:fake_gripper_autocol prefix="${prefix}"/>
     </xacro:macro>
 
     <xacro:macro name="no_gripper_col_with" params="prefix link">
-        <xacro:fake_gripper_col_with prefix="${prefix}" link="${link}"/>
     </xacro:macro>
 </robot>

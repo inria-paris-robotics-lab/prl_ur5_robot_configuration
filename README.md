@@ -28,7 +28,7 @@ with the first link being the child of `${parent}` with a transform of `*origin`
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
-    <xacro:macro name="cylinder_tool_group" params="prefix">
+    <xacro:macro name="cylinder_tool_group_define" params="prefix">
         ...$1...
     </xacro:macro>
 
