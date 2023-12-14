@@ -1,15 +1,15 @@
 - type: 'realsense-d435i'
   name_prefix: bravo
   bounding_box: &realsense_size
-    width: 0.25
-    height: 0.20
+    width: 0.35
+    height: 0.30
   pose:
-    x: -0.492452
-    y: 0.689076
-    z: 0.379511
-    roll:  -2.099
-    pitch: 0.002
-    yaw:   -3.117
+    x: -0.486534
+    y: 0.70895
+    z: 0.398287
+    roll:  -1.931
+    pitch: 0.014
+    yaw:   -3.121
   fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
     x: 0.03
@@ -20,16 +20,16 @@
   name_prefix: charlie
   bounding_box: *realsense_size
   pose:
-    x: -1.200689
-    y: 0.001414
-    z: 0.393254
-    roll:  -2.094
-    pitch: -0.003
-    yaw:   -1.568
+    x: -1.199518
+    y: 0.003458
+    z: 0.400626
+    roll:  -2.095
+    pitch: -0.006
+    yaw:   -1.550
   fixture_orientation: "-x"
   offset: # From fixture tip to camera optical frame offset
     x: -0.01
-    y: 0.03
+    y: 0.04
     z: 0.08
 
 - type: 'realsense-d435i'
