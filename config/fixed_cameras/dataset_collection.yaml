@@ -33,33 +33,17 @@
     z: 0.08
 
 - type: 'realsense-d435i'
-  name_prefix: delta
-  bounding_box: *realsense_size
-  pose:
-    x: 0.611561
-    y: 0.518683
-    z: 0.276871
-    roll:  -1.907
-    pitch: 0.019
-    yaw:   3.139
-  fixture_orientation: "+y"
-  offset: # From fixture tip to camera optical frame offset
-    x: 0.03
-    y: 0.075
-    z: 0.075
-
-- type: 'realsense-d435i'
   name_prefix: alpha
   bounding_box: *realsense_size
   pose:
-    x: 1.123226
-    y: -0.029688
-    z: 0.353876
-    roll:  -2.000
-    pitch: -0.042
-    yaw:   1.608
-  fixture_orientation: "+x"
+    x: 0.519320
+    y: 0.574305
+    z: 0.574076
+    roll:  -2.278
+    pitch: -0.000
+    yaw:   3.127
+  fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
-    x: -0.08
-    y: 0.02
-    z: 0.08
+    x: 0.00
+    y: -0.03
+    z: 0.07
