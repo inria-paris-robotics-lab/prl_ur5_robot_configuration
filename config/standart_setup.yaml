@@ -3,12 +3,12 @@ left:
   arm_kinematics: "kinematics/ur5_left.yaml"
   arm_joint_limits: "limits/half_joint_limits.yaml"
   arm_pose:
-    x: -0.17500909353972682
-    y: -0.0016759222865488366
-    z: 0.7912658356109891
-    roll: -3.136704987275461
-    pitch: -0.7845638315035199
-    yaw: 3.129104078896269
+    x: -0.765
+    y: -0.09
+    z: 0.01
+    roll: 0
+    pitch: 0
+    yaw: 0
 
   gripper: "onrobot-rg6-v2"
   gripper_controller: "onrobot_rg"
@@ -34,11 +34,11 @@ right:
   arm_kinematics: "kinematics/ur5_right.yaml"
   arm_joint_limits: "limits/half_joint_limits.yaml"
   arm_pose:
-    x: 0.17906
-    y: 0.0
-    z: 0.78936
+    x: 0.765
+    y: -0.09
+    z: 0.01
     roll: 0.0
-    pitch: 2.356194490192345
+    pitch: 0
     yaw: 0.0
   gripper: "custom:cylinder_tool"
   gripper_controller: "None"
