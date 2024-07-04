@@ -40,8 +40,10 @@ right:
     roll: 0.0
     pitch: 0
     yaw: 0.0
-  gripper: "custom:cylinder_tool"
-  gripper_controller: "None"
+  # gripper: "custom:cylinder_tool"
+  # gripper_controller: "None"
+  gripper: "allegro-hand:right"
+  gripper_controller: "allegro-hand"
   gripper_pose:
     x: 0.0
     y: 0.0
