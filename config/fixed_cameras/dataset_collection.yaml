@@ -1,33 +1,67 @@
-# - type: 'realsense-d435i'
-#   name_prefix: bravo
-#   bounding_box: &realsense_size
-#     width: 0.35
-#     height: 0.30
-#   pose:
-#     x: -0.486534
-#     y: 0.70895
-#     z: 0.398287
-#     roll:  -1.931
-#     pitch: 0.014
-#     yaw:   -3.121
-#   fixture_orientation: "+y"
-#   offset: # From fixture tip to camera optical frame offset
-#     x: 0.03
-#     y: 0.01
-#     z: 0.08
+- type: 'realsense-d435i'
+  name_prefix: bravo
+  bounding_box: &realsense_size
+    width: 0.35
+    height: 0.30
+  pose:
+    x: -0.192736
+    y: 0.835309
+    z: 0.700992
+    roll:  -2.227
+    pitch: 0.011
+    yaw:   3.142
+  fixture_orientation: "+y"
+  offset: # From fixture tip to camera optical frame offset
+    x: 0.00
+    y: 0.00
+    z: 0.00
 
-# - type: 'realsense-d435i'
-#   name_prefix: charlie
-#   bounding_box: *realsense_size
-#   pose:
-#     x: -1.199518
-#     y: 0.003458
-#     z: 0.400626
-#     roll:  -2.095
-#     pitch: -0.006
-#     yaw:   -1.550
-#   fixture_orientation: "-x"
-#   offset: # From fixture tip to camera optical frame offset
-#     x: -0.01
-#     y: 0.04
-#     z: 0.08
+- type: 'realsense-d435i'
+  name_prefix: charlie
+  bounding_box: *realsense_size
+  pose:
+    x: -0.670188
+    y: -0.558114
+    z: 0.597616
+    roll:  -2.355
+    pitch: -0.100
+    yaw:   -0.517
+  fixture_orientation: "-y"
+  offset: # From fixture tip to camera optical frame offset
+    x: 0.00
+    y: 0.00
+    z: 0.00
+
+- type: 'realsense-d435i'
+  name_prefix: alpha
+  bounding_box: *realsense_size
+  pose:
+    x: 0.131421
+    y: -0.626980
+    z: 0.818875
+    roll:  -2.467
+    pitch: 0.026
+    yaw:   0.475
+  fixture_orientation: "-y"
+  offset: # From fixture tip to camera optical frame offset
+    x: 0.00
+    y: 0.00
+    z: 0.00
+
+
+
+- type: 'realsense-d435i'
+  name_prefix: spare
+  bounding_box: *realsense_size
+  pose:
+    x: 0.317721
+    y: 0.986317
+    z: 0.760249
+    roll:  -2.266
+    pitch: 0.082
+    yaw:   -3.008
+  fixture_orientation: "+y"
+  offset: # From fixture tip to camera optical frame offset
+    x: 0.00
+    y: 0.00
+    z: 0.00

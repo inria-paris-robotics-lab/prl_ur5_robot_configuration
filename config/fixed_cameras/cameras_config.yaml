@@ -1,0 +1,33 @@
+cameras:
+  alpha_camera:
+    serial_no: "_145422071857"
+    activate: true
+    enable_depth: true
+    pointcloud: true
+
+  bravo_camera:
+    serial_no: "_031522071313"
+    activate: true
+    enable_depth: true
+    enable_infra: true # think to activate it in addition to infra1 or 2
+    enable_infra1: true
+    enable_infra2: true 
+    enable_color: true
+    enable_gyro: false
+    enable_accel: false 
+    enable_rgbd: true
+    pointcloud: true
+
+  charlie_camera:
+    serial_no: "_031522071315"
+    activate: false
+    enable_depth: true
+    pointcloud: true
+
+  delta_camera:
+    serial_no: "_031522071316"
+    activate: false
+    enable_depth: false
+    pointcloud: true
+
+# [ERROR] [1747408235.499391476] [camera.bravo_camera]: In order to get rgbd topic enabled, you should enable: color stream, depth stream, sync_mode and align_depth
