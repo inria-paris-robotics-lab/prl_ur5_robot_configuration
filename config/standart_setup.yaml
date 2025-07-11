@@ -10,8 +10,8 @@ left:
     pitch: 0
     yaw: 0
 
-  gripper: "weiss-wsg50"
-  gripper_controller: "weiss-gripper"
+  gripper: "onrobot-rg6-v2"
+  gripper_controller: "onrobot-rg"
   gripper_pose:
     x: 0.0
     y: 0.0
@@ -28,7 +28,7 @@ left:
   #   pitch: -1.5613233179664476
   #   yaw: -1.8675144444458067
   network:
-    ip: "192.168.56.101"
+    ip: "192.168.1.21"
     script_command_port: "50005"
     reverse_port: "50001"
     script_sender_port: "50002"
@@ -46,8 +46,8 @@ right:
     roll: 0.0
     pitch: 0
     yaw: 0.0
-  gripper: "weiss-wsg50"
-  gripper_controller: "weiss-gripper"
+  gripper: "onrobot-rg6"
+  gripper_controller: "onrobot-rg"
   gripper_pose:
     x: 0.0
     y: 0.0
@@ -64,7 +64,7 @@ right:
   #   pitch: -1.57
   #   yaw: 0.0
   network:
-    ip: "192.168.56.202"
+    ip: "192.168.1.20"
     script_command_port: "50010"
     reverse_port: "50006"
     script_sender_port: "50007"

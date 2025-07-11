@@ -54,13 +54,13 @@
   name_prefix: spare
   bounding_box: *realsense_size
   pose:
-    x: 0.317721
-    y: 0.986317
+    x: -0.245
+    y: -0.75
     z: 0.760249
     roll:  -2.266
     pitch: 0.082
     yaw:   -3.008
-  fixture_orientation: "+y"
+  fixture_orientation: "-y"
   offset: # From fixture tip to camera optical frame offset
     x: 0.00
     y: 0.00
