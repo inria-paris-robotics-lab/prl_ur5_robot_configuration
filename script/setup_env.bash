@@ -12,7 +12,7 @@ except KeyError: # If the key is not found, output nothing
 EOF
 }
 
-config_file=`rospack  find prl_ur5_robot_configuration`/config/standart_setup.yaml
+config_file=`rospack  find prl_ur5_robot_configuration`/config/standard_setup.yaml
 
 export PRL_CONFIG_LEFT_GRIPPER=$(parse_yaml $config_file "['left']['gripper']")
 export PRL_CONFIG_RIGHT_GRIPPER=$(parse_yaml $config_file "['right']['gripper']")
