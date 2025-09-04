@@ -1,5 +1,6 @@
 cameras:
   alpha_camera:
+    type: realsense
     serial_no: "_145422071857"
     activate: true
     enable_depth: true
@@ -13,6 +14,7 @@ cameras:
     pointcloud: true
 
   bravo_camera:
+    type: realsense
     serial_no: "_031522071313"
     activate: true
     enable_depth: true
@@ -26,6 +28,7 @@ cameras:
     pointcloud: true
 
   charlie_camera:
+    type: realsense
     serial_no: "_143122078418"
     activate: true
     enable_depth: true
@@ -39,6 +42,7 @@ cameras:
     pointcloud: true
 
   delta_camera:
+    type: realsense
     serial_no: "_031522071316"
     activate: false
     enable_depth: true
