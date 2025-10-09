@@ -51,7 +51,7 @@
 - type: 'femto-mega'
   name_prefix: echo
   bounding_box: &orbbec_size
-    width: 0.45
+    width: 0.40
     height: 0.35
   pose:
     x: 0.25
