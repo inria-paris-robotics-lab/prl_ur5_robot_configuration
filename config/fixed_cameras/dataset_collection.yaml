@@ -1,8 +1,24 @@
 - type: 'realsense-d435i'
-  name_prefix: bravo
+  name_prefix: alpha
   bounding_box: &realsense_size
     width: 0.35
     height: 0.30
+  pose:
+    x: 0.131421
+    y: -0.626980
+    z: 0.818875
+    roll:  -2.467
+    pitch: 0.026
+    yaw:   0.475
+  fixture_orientation: "-y"
+  offset: # From fixture tip to camera optical frame offset
+    x: 0.00
+    y: 0.00
+    z: 0.00
+
+- type: 'realsense-d435i'
+  name_prefix: bravo
+  bounding_box: *realsense_size
   pose:
     x: -0.192736
     y: 0.835309
@@ -32,27 +48,43 @@
     y: 0.00
     z: 0.00
 
-- type: 'realsense-d435i'
-  name_prefix: alpha
-  bounding_box: *realsense_size
+- type: 'femto-mega'
+  name_prefix: echo
+  bounding_box: &orbbec_size
+    width: 0.45
+    height: 0.35
   pose:
-    x: 0.131421
-    y: -0.626980
-    z: 0.818875
-    roll:  -2.467
-    pitch: 0.026
-    yaw:   0.475
-  fixture_orientation: "-y"
+    x: 0.25
+    y: 0.67
+    z: 0.760249
+    roll:  -2.266
+    pitch: 0.082
+    yaw:   -0.785
+  fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
     x: 0.00
     y: 0.00
     z: 0.00
 
+- type: 'femto-mega'
+  name_prefix: foxtrot
+  bounding_box: *orbbec_size
+  pose:
+    x: -0.66
+    y: 0.67
+    z: 0.760249
+    roll:  -2.266
+    pitch: 0.082
+    yaw:   0.785
+  fixture_orientation: "+y"
+  offset: # From fixture tip to camera optical frame offset
+    x: 0.00
+    y: 0.00
+    z: 0.00
 
-
-- type: 'realsense-d435i'
-  name_prefix: spare
-  bounding_box: *realsense_size
+- type: 'femto-mega'
+  name_prefix: golf
+  bounding_box: *orbbec_size
   pose:
     x: -0.245
     y: -0.75

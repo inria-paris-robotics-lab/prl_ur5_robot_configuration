@@ -10,8 +10,8 @@ left:
     pitch: 0
     yaw: 0
 
-  gripper: "onrobot-rg6-v2"
-  gripper_controller: "onrobot-rg"
+  gripper: "custom:no_gripper"
+  gripper_controller: "none"
   gripper_pose:
     x: 0.0
     y: 0.0
@@ -46,8 +46,8 @@ right:
     roll: 0.0
     pitch: 0
     yaw: 0.0
-  gripper: "onrobot-rg6"
-  gripper_controller: "onrobot-rg"
+  gripper: "custom:no_gripper"
+  gripper_controller: "none"
   gripper_pose:
     x: 0.0
     y: 0.0
