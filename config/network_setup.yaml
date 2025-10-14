@@ -1,0 +1,15 @@
+# left arm network configuration
+left_network:
+  ip: "192.168.1.21"
+  script_command_port: "50005"
+  reverse_port: "50001"
+  script_sender_port: "50002"
+  trajectory_port: "50004"
+
+# right arm networkconfiguration
+right_network:
+  ip: "192.168.1.20"
+  script_command_port: "50010"
+  reverse_port: "50006"
+  script_sender_port: "50007"
+  trajectory_port: "50009"
