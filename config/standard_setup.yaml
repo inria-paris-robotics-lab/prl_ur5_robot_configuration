@@ -27,13 +27,6 @@ left:
   #   roll: 0.2835816306216423
   #   pitch: -1.5613233179664476
   #   yaw: -1.8675144444458067
-  network:
-    ip: "192.168.1.21"
-    script_command_port: "50005"
-    reverse_port: "50001"
-    script_sender_port: "50002"
-    trajectory_port: "50004"
-
 
 # right arm configuration
 right:
@@ -63,12 +56,6 @@ right:
   #   roll: -1.57
   #   pitch: -1.57
   #   yaw: 0.0
-  network:
-    ip: "192.168.1.20"
-    script_command_port: "50010"
-    reverse_port: "50006"
-    script_sender_port: "50007"
-    trajectory_port: "50009"
 
 # Fixed cameras
 fixed_cameras_file: "fixed_cameras/dataset_collection.yaml"
