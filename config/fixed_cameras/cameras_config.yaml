@@ -86,8 +86,8 @@ cameras:
     spatial_filter_magnitude: 2
     spatial_filter_radius: 2
     enable_temporal_filter: true
-    temporal_filter_alpha: 0.4
-    temporal_filter_delta: 20
+    temporal_filter_weight: 0.4
+    temporal_filter_diff_threshold: 20
     enable_hole_filling_filter: true
     hole_filling_filter_mode: 1
     enable_threshold_filter: true
@@ -133,8 +133,8 @@ cameras:
     spatial_filter_magnitude: 2
     spatial_filter_radius: 2
     enable_temporal_filter: true
-    temporal_filter_alpha: 0.4
-    temporal_filter_delta: 20
+    temporal_filter_weight: 0.4
+    temporal_filter_diff_threshold: 20
     enable_hole_filling_filter: true
     hole_filling_filter_mode: 1
     enable_threshold_filter: true
@@ -180,8 +180,8 @@ cameras:
     spatial_filter_magnitude: 2
     spatial_filter_radius: 2
     enable_temporal_filter: true
-    temporal_filter_alpha: 0.4
-    temporal_filter_delta: 20
+    temporal_filter_weight: 0.4
+    temporal_filter_diff_threshold: 20
     enable_hole_filling_filter: true
     hole_filling_filter_mode: 1
     enable_threshold_filter: true
