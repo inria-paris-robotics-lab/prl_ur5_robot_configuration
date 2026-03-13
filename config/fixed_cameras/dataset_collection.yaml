@@ -54,12 +54,12 @@
     width: 0.40
     height: 0.35
   pose:
-    x: 0.25
-    y: 0.67
-    z: 0.760249
-    roll:  -2.266
-    pitch: 0.082
-    yaw:   -0.785
+    x: 0.164756
+    y: 0.61793
+    z: 0.727701
+    roll:  -2.526
+    pitch: 0.063
+    yaw:   2.469
   fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
     x: 0.00
@@ -70,12 +70,12 @@
   name_prefix: foxtrot
   bounding_box: *orbbec_size
   pose:
-    x: -0.66
-    y: 0.67
-    z: 0.760249
-    roll:  -2.266
-    pitch: 0.082
-    yaw:   0.785
+    x: -0.622808
+    y: 0.582085
+    z: 0.728005
+    roll:  -2.414
+    pitch: -0.017
+    yaw:   -2.494
   fixture_orientation: "+y"
   offset: # From fixture tip to camera optical frame offset
     x: 0.00
@@ -86,12 +86,12 @@
   name_prefix: golf
   bounding_box: *orbbec_size
   pose:
-    x: -0.245
-    y: -0.75
-    z: 0.760249
-    roll:  -2.266
-    pitch: 0.082
-    yaw:   -3.008
+    x: -0.220848
+    y: -0.621937
+    z: 0.688742
+    roll:  -2.552
+    pitch: 0.000
+    yaw:   -0.015
   fixture_orientation: "-y"
   offset: # From fixture tip to camera optical frame offset
     x: 0.00
