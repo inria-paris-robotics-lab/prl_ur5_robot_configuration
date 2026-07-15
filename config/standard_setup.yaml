@@ -43,7 +43,7 @@ right:
     yaw: 0.0
   ft_sensor: "None" #["robotiq_ft300","none"]
   gripper: "custom:no_gripper"
-  gripper_controller: "allegro-none"
+  gripper_controller: "none"
   gripper_pose:
     x: 0.0
     y: 0.0
